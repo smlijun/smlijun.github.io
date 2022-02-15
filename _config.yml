@@ -1,6 +1,6 @@
 # Setup
-title: Dark Poole
-url: https://getpoole.com
+title: Smlijun Blog
+url: https://smlijun.github.io
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -45,4 +45,4 @@ nav:
     url: /archive
 
   - title: About
-    url: /about
+    url: /about`
