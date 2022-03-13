@@ -23,7 +23,7 @@ Mobile     | 010-8629-1952
 
 Level       | School Name    | Major            | Start   | End     | Status    | 최종학력
 ------------|----------------|------------------|---------|---------|-----------|--------
-University  | Ajou University  | Cyber Security | 2020.03 | 2025.03 | graduated | 최종
+University  | Ajou University  | Cyber Security | 2020.03 | 2025.03 | Attending | 최종
 High School | 창신 고등학교 |    자연계              | 2017.03 | 2020.03 | graduated |
 
 
