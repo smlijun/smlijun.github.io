@@ -1,0 +1,211 @@
+{
+  "vendors": [
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "description": "Windows kernel and user-mode privilege escalation vulnerabilities",
+      "logo": "microsoft",
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2025-26688",
+          "title": "Microsoft Virtual Hard Disk Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26688"
+        },
+        {
+          "cve": "CVE-2025-27467",
+          "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Digital Media"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27467"
+        },
+        {
+          "cve": "CVE-2025-27476",
+          "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Digital Media"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27476"
+        },
+        {
+          "cve": "CVE-2025-27730",
+          "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Digital Media"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27730"
+        },
+        {
+          "cve": "CVE-2025-21182",
+          "title": "Windows ReFS Deduplication Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "ReFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21182"
+        },
+        {
+          "cve": "CVE-2025-21183",
+          "title": "Windows ReFS Deduplication Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "ReFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21183"
+        },
+        {
+          "cve": "CVE-2025-29838",
+          "title": "Windows ExecutionContext Driver Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Driver"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29838"
+        },
+        {
+          "cve": "CVE-2025-49664",
+          "title": "Windows User-Mode Driver Framework Host Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Windows", "Information Disclosure", "Driver"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49664"
+        },
+        {
+          "cve": "CVE-2025-53133",
+          "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53133"
+        },
+        {
+          "cve": "CVE-2025-50174",
+          "title": "Windows Device Association Broker Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50174"
+        },
+        {
+          "cve": "CVE-2025-53150",
+          "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Digital Media"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53150"
+        }
+      ]
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "description": "Webkit and ImageIO vulnerabilities affecting Safari and macOS",
+      "logo": "apple",
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2025-24086",
+          "title": "Apple ImageIO Library Denial of Service Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["ImageIO", "DoS"],
+          "url": "https://support.apple.com/en-us/122066"
+        },
+        {
+          "cve": "TBD",
+          "title": "Apple ImageIO Library Denial of Service Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["ImageIO", "DoS"],
+          "url": ""
+        },
+        {
+          "cve": "CVE-2023-35074",
+          "title": "Webkit JIT Type Confusion Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Webkit", "JIT", "Type Confusion"],
+          "url": "https://support.apple.com/en-us/120949"
+        },
+        {
+          "cve": "CVE-2023-42833",
+          "title": "Webkit JIT Type Confusion Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Webkit", "JIT", "Type Confusion"],
+          "url": "https://support.apple.com/en-us/120949"
+        }
+      ]
+    },
+    {
+      "id": "opensource",
+      "name": "Open Source",
+      "description": "Vulnerabilities in widely-used open source projects",
+      "logo": "oss",
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2025-48071",
+          "title": "OpenEXR EXR File Parsing Heap-based Buffer Overflow",
+          "description": "Heap-based buffer overflow in GitHub repository AcademicSoftwareFoundation/OpenEXR. Remote code execution vulnerability allowing arbitrary code execution via malicious EXR file.",
+          "severity": "high",
+          "tags": ["OpenEXR", "Heap Overflow", "RCE"],
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-25-834/"
+        },
+        {
+          "cve": "CVE-2022-2549",
+          "title": "GPAC NULL Pointer Dereference",
+          "description": "NULL pointer dereference in GitHub repository gpac/gpac",
+          "severity": "medium",
+          "tags": ["GPAC", "NULL Deref"],
+          "url": "http://nvd.nist.gov/vuln/detail/CVE-2022-2549"
+        },
+        {
+          "cve": "CVE-2022-2598",
+          "title": "Vim Out-of-bounds Write",
+          "description": "Out-of-bounds write to API in GitHub repository vim/vim",
+          "severity": "high",
+          "tags": ["Vim", "OOB Write"],
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2598"
+        }
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise Security Solutions",
+      "description": "VPN, NAC, and EDR product vulnerabilities",
+      "logo": "enterprise",
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2022-1468",
+          "title": "F5 Big IP VPN iControl REST API DoS",
+          "description": "Denial of service vulnerability in F5 Big IP VPN iControl REST API",
+          "severity": "high",
+          "tags": ["F5", "VPN", "DoS"],
+          "url": "https://my.f5.com/manage/s/article/K15101402"
+        },
+        {
+          "cve": "CVE-2022-29474",
+          "title": "F5 BIG-IP iControl SOAP Directory Traversal",
+          "description": "Directory traversal vulnerability in F5 BIG-IP iControl SOAP interface",
+          "severity": "critical",
+          "tags": ["F5", "Path Traversal"],
+          "url": "https://my.f5.com/manage/s/article/K59904248"
+        },
+        {
+          "cve": "NDA",
+          "title": "Genian NAC/EDR Multiple Vulnerabilities",
+          "description": "70+ vulnerabilities discovered in Korean enterprise NAC/EDR solution",
+          "severity": "critical",
+          "tags": ["NAC", "EDR", "RCE", "Pre-Auth"],
+          "url": "",
+          "highlight": true,
+          "details": [
+            "4 Pre-Authentication RCE exploits",
+            "2 Post-Authentication RCE exploits",
+            "Multiple privilege escalation vulnerabilities"
+          ]
+        }
+      ]
+    }
+  ]
+}
+

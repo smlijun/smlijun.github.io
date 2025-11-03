@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DongJun Kim</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">DongJun Kim</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-gradient">Security Researcher</span>
+                        <br>focused on Windows Kernel & Browser Security
+                    </h1>
+                    <p class="hero-description">
+                        Security researcher specializing in Windows kernel vulnerability analysis and exploitation. 
+                        My research experience spans from Windows kernel-level security to Chromium browser exploitation, 
+                        with extensive work in fuzzing-based vulnerability discovery. I focus on identifying and analyzing 
+                        privilege escalation vulnerabilities in Windows operating systems and developing exploitation techniques.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="vulnerabilities.html" class="btn btn-primary">Research Portfolio</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="profile.jpg" alt="DongJun Kim" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">
+                        I am a security researcher with deep expertise in Windows kernel security and exploitation. 
+                        My primary research focus has been on discovering and exploiting vulnerabilities in the Windows 
+                        operating system kernel, where I have identified numerous privilege escalation vulnerabilities. 
+                        Additionally, I have experience with Chromium browser security and extensively utilize fuzzing 
+                        techniques for automated vulnerability discovery.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" id="total-cves">--</div>
+                            <div class="stat-label">Published CVEs</div>
+                        </div>
+                        <div class="stat-card"> 
+                            <div class="stat-number" id="total-vendors">--</div>
+                            <div class="stat-label">Major Platforms</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">Top 100</div>
+                            <div class="stat-label">MSRC MVR 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Security Researcher</h3>
+                            <span class="timeline-date">April 2024 - Present</span>
+                        </div>
+                        <p class="timeline-company">Enki WhiteHat</p>
+                        <p class="timeline-description">
+                            Conducting in-depth research on Windows kernel security and exploitation techniques. 
+                            Primary focus on discovering privilege escalation vulnerabilities through fuzzing and 
+                            manual code analysis. Additional research on Chromium browser security and exploit development 
+                            for modern web browsers.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Cybersecurity Specialist</h3>
+                            <span class="timeline-date">September 2022 - March 2024</span>
+                        </div>
+                        <p class="timeline-company">Korea Department of Defense (Research Institute)</p>
+                        <p class="timeline-description">
+                            Conducted vulnerability research and security assessments for defense systems and critical 
+                            infrastructure. Performed security evaluations of military software and contributed to enhancing 
+                            cybersecurity capabilities. Developed exploitation techniques and security testing methodologies 
+                            for classified defense applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">💻</div>
+                    <h3>Windows Kernel Security</h3>
+                    <p>Primary research focus on Windows kernel vulnerability discovery and exploitation. 
+                    Extensive experience in analyzing kernel drivers, services, and system components.</p>
+                    <ul class="research-list">
+                        <li>Kernel driver vulnerability analysis</li>
+                        <li>Windows service exploitation</li>
+                        <li>COM object security research</li>
+                        <li>Privilege escalation techniques</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🔍</div>
+                    <h3>Fuzzing & Automation</h3>
+                    <p>Extensive use of fuzzing techniques for automated vulnerability discovery in complex 
+                    software systems, particularly Windows components and file parsers.</p>
+                    <ul class="research-list">
+                        <li>Coverage-guided fuzzing</li>
+                        <li>File format fuzzing</li>
+                        <li>Automated crash analysis</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🌐</div>
+                    <h3>Chromium Browser Security</h3>
+                    <p>Research experience in Chromium-based browser security, including renderer exploitation 
+                    and sandbox escape techniques.</p>
+                    <ul class="research-list">
+                        <li>Renderer process exploitation</li>
+                        <li>Sandbox escape analysis</li>
+                        <li>Browser IPC security</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">⬆️</div>
+                    <h3>Windows Exploitation</h3>
+                    <p>Development of exploitation techniques for Windows vulnerabilities, from initial code 
+                    execution to full system compromise.</p>
+                    <ul class="research-list">
+                        <li>Local privilege escalation</li>
+                        <li>Exploit development</li>
+                        <li>Security boundary analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-highlight">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Vulnerability Disclosures</h2>
+                <p><span id="cta-cve-count">--</span> CVEs across Microsoft, Apple, and open-source projects</p>
+                <a href="vulnerabilities.html" class="btn btn-primary">View All Vulnerabilities</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Recognition & Awards</h2>
+            <div class="recognition-section">
+                <h3 class="subsection-title">Microsoft Security Response Center</h3>
+                <div class="recognition-grid">
+                    <div class="recognition-card featured">
+                        <div class="recognition-icon">🏆</div>
+                        <h4>2025 Most Valuable Researcher</h4>
+                        <p class="recognition-rank">#85 - Annual Top 100</p>
+                        <p class="recognition-date">July 2025</p>
+                    </div>
+                    <div class="recognition-card">
+                        <div class="recognition-icon">📊</div>
+                        <h4>2025 Q3 Quarterly Leaderboard</h4>
+                        <p class="recognition-date">Q3 2025</p>
+                    </div>
+                    <div class="recognition-card">
+                        <div class="recognition-icon">📊</div>
+                        <h4>2025 Q1 Quarterly Leaderboard</h4>
+                        <p class="recognition-date">Q1 2025</p>
+                    </div>
+                    <div class="recognition-card">
+                        <div class="recognition-icon">📊</div>
+                        <h4>2024 Q4 Quarterly Leaderboard</h4>
+                        <p class="recognition-date">Q4 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Publications & Talks</h2>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE</h3>
+                        <span class="publication-date">May 2025</span>
+                    </div>
+                    <p class="publication-venue">Offbyeone 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Competitions</h2>
+            <div class="competitions-grid">
+                <div class="competition-card award">
+                    <h3>🥉 DEF CON 33 CTF - 3rd Place</h3>
+                    <p>Team SuperDiceCode</p>
+                </div>
+                <div class="competition-card award">
+                    <h3>🥈 WhiteHat Contest - 2nd Place</h3>
+                    <p>Team 991 - Republic of Korea Cyber Operations Command</p>
+                </div>
+            </div>
+            <div class="organized-section">
+                <h3 class="subsection-title">Organized CTF Challenges</h3>
+                <ul class="organized-list">
+                    <li><strong>CodeGate 2025 Final</strong> - fullchain</li>
+                    <li><strong>CodeGate 2025 Pre-qual</strong> - PWN-AppContainer</li>
+                    <li><strong>CodeGate 2024 Final</strong> - PWN-ULFS</li>
+                    <li><strong>CCE 2024 Pre-qual</strong> - PWN-BabyMojo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:korea.smlijun@gmail.com" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>korea.smlijun@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/kdj-smlijun" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>kdj-smlijun</p>
+                </a>
+                <a href="https://github.com/smlijun" target="_blank" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>@smlijun</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Seoul, Korea</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DongJun Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
