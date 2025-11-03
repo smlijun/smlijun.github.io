@@ -105,6 +105,7 @@ a {
     display: flex;
     list-style: none;
     gap: 32px;
+    align-items: center;
 }
 
 .nav-menu a {
@@ -556,6 +557,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
     margin-top: 32px;
+    align-items: start;
 }
 
 .recognition-card {
@@ -565,6 +567,9 @@ a {
     border: 1px solid var(--border-color);
     text-align: center;
     transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .recognition-card:hover {
@@ -589,6 +594,13 @@ a {
     color: var(--text-dark);
     margin-bottom: 12px;
     line-height: 1.4;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .recognition-rank {
@@ -608,6 +620,12 @@ a {
     margin: 0 auto;
 }
 
+.publication-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .publication-card {
     background: var(--bg-card);
     padding: 32px;
@@ -616,11 +634,13 @@ a {
     border-left: 4px solid var(--text-light);
     margin-bottom: 24px;
     transition: var(--transition-smooth);
+    cursor: pointer;
 }
 
 .publication-card:hover {
     border-color: var(--border-light);
     box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .publication-header {

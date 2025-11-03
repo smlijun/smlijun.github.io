@@ -178,7 +178,7 @@
           "cve": "CVE-2022-1468",
           "title": "F5 Big IP VPN iControl REST API DoS",
           "description": "Denial of service vulnerability in F5 Big IP VPN iControl REST API",
-          "severity": "high",
+          "severity": "medium",
           "tags": ["F5", "VPN", "DoS"],
           "url": "https://my.f5.com/manage/s/article/K15101402"
         },
@@ -186,13 +186,13 @@
           "cve": "CVE-2022-29474",
           "title": "F5 BIG-IP iControl SOAP Directory Traversal",
           "description": "Directory traversal vulnerability in F5 BIG-IP iControl SOAP interface",
-          "severity": "critical",
+          "severity": "medium",
           "tags": ["F5", "Path Traversal"],
           "url": "https://my.f5.com/manage/s/article/K59904248"
         },
         {
           "cve": "NDA",
-          "title": "Genian NAC/EDR Multiple Vulnerabilities",
+          "title": "NAC/EDR Multiple Vulnerabilities",
           "description": "70+ vulnerabilities discovered in Korean enterprise NAC/EDR solution",
           "severity": "critical",
           "tags": ["NAC", "EDR", "RCE", "Pre-Auth"],
