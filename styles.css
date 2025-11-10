@@ -1032,6 +1032,95 @@ a {
     opacity: 0.6;
 }
 
+/* CV Page Styles */
+.cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cv-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.cv-viewer {
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: var(--shadow-md);
+}
+
+.cv-viewer iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+}
+
+.cv-fallback {
+    display: none;
+    text-align: center;
+    padding: 40px;
+}
+
+.cv-fallback p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.cv-info {
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+}
+
+.cv-info h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.cv-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-info li {
+    font-size: 15px;
+    color: var(--text-light);
+    padding: 10px 0;
+    padding-left: 24px;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cv-info li:last-child {
+    border-bottom: none;
+}
+
+.cv-info li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cv-info strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 16px;
@@ -1285,6 +1374,30 @@ a {
         width: 50px;
         height: 50px;
     }
+
+    .cv-viewer iframe {
+        height: 800px;
+    }
+
+    .cv-actions {
+        flex-direction: column;
+    }
+
+    .cv-actions .btn {
+        width: 100%;
+    }
+
+    .cv-info {
+        padding: 24px;
+    }
+
+    .cv-info h3 {
+        font-size: 20px;
+    }
+
+    .cv-info li {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1333,6 +1446,10 @@ a {
 
     .cta-content h2 {
         font-size: 28px;
+    }
+
+    .cv-viewer iframe {
+        height: 600px;
     }
 }
 

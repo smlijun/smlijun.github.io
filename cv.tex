@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Adjust the page margins
+\usepackage[scale=0.85,top=1.5cm,bottom=1.5cm]{geometry}
+
+% Additional packages
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{mediumblue}{RGB}{51,102,153}
+
+% Custom section format
+\renewcommand{\sectionfont}{\Large\bfseries\color{darkblue}}
+
+% Personal data
+\name{DongJun}{Kim}
+\title{Security Researcher \\ \normalsize Windows Kernel \& Browser Security Specialist}
+\address{Seoul, Korea}{}{}
+\email{korea.smlijun@gmail.com}
+\social[linkedin]{kdj-smlijun}
+\social[github]{smlijun}
+\homepage{smlijun.github.io}
+\photo[80pt][0.4pt]{profile.jpg}
+
+% Custom header with icons
+\renewcommand*{\namefont}{\fontsize{28}{32}\mdseries\upshape\color{darkblue}}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{-10mm}
+
+\section{Professional Summary}
+\cvitem{}{\large Security researcher with expertise in Windows kernel vulnerability analysis and browser exploitation. Proven track record of discovering critical vulnerabilities and achieving recognition in Microsoft's MVR Top 100. Specialized in advanced fuzzing techniques (KAFL, Fuzzilli) and exploit development.}
+
+\section{Education}
+\cventry{2020.03 -- 2026.03}{Bachelor of Science in \textbf{Cybersecurity}}{Ajou University}{Suwon, South Korea}{}{\textit{Focus: Vulnerability Research, Exploit Development, System Security}}
+
+\section{Professional Experience}
+\cventry{2024.04 -- Present}{\textbf{Security Researcher}}{Enki WhiteHat}{}{}{
+  \begin{itemize}
+    \item Conducting research on Windows kernel security and exploitation techniques
+    \item Discovering privilege escalation vulnerabilities using \textbf{KAFL} for kernel fuzzing
+    \item Researching Chromium browser security with \textbf{Fuzzilli} framework
+    \item Developing exploitation techniques for modern web browsers
+    \item Contributing to vulnerability disclosure programs (Microsoft, Apple)
+  \end{itemize}
+}
+
+\cventry{2022.09 -- 2024.03}{\textbf{Cybersecurity Specialist}}{Korea Department of Defense}{Research Institute}{}{
+  \begin{itemize}
+    \item Conducted vulnerability research for defense systems and critical infrastructure
+    \item Performed security evaluations of military software systems
+    \item Developed exploitation techniques and security testing methodologies
+    \item Enhanced cybersecurity capabilities for classified defense applications
+  \end{itemize}
+}
+
+\cventry{2021.07 -- 2022.03}{\textbf{Best of the Best 10th} - Vulnerability Analysis Track}{KITRI}{Korea Information Technology Research Institute}{}{
+  \begin{itemize}
+    \item Completed intensive cybersecurity training program (9 months)
+    \item Specialized in vulnerability discovery and exploit development
+    \item \textcolor{blue}{\textbf{Selected as Top 10 Finalist}} among all participants
+    \item Recognized for outstanding technical excellence
+  \end{itemize}
+}
+
+\section{Research Interests \& Technical Expertise}
+
+\cvitem{\faIcon{laptop-code} Windows Kernel}{
+  Kernel driver vulnerability analysis \textbullet{} Windows service exploitation \textbullet{} COM object security \textbullet{} Privilege escalation techniques
+}
+
+\cvitem{\faIcon{search} Fuzzing}{
+  \textbf{KAFL}-based kernel fuzzing \textbullet{} \textbf{Fuzzilli} for JavaScript engines \textbullet{} Fuzzing harness auto generation \textbullet{} Coverage-guided fuzzing
+}
+
+\cvitem{\faIcon{chrome} Browser Security}{
+  Renderer process exploitation \textbullet{} Sandbox escape analysis \textbullet{} Browser IPC security \textbullet{} Chromium internals
+}
+
+\cvitem{\faIcon{shield-alt} Exploitation}{
+  Local privilege escalation \textbullet{} Exploit development \textbullet{} Security boundary analysis \textbullet{} Reverse engineering
+}
+
+\section{Recognition \& Awards}
+
+\cvitem{\textcolor{blue}{\faIcon{trophy}}}{\textbf{Microsoft Security Response Center - Most Valuable Researcher 2025}}
+\cvitem{}{\textbf{\#85} in Annual Top 100 (July 2025)}
+\cvitem{}{Q3 2025, Q1 2025, Q4 2024 Quarterly Leaderboard}
+
+\vspace{2mm}
+
+\cvitem{\textcolor{blue}{\faIcon{flag}}}{\textbf{CTF Competitions}}
+\cvitem{2025}{\textbf{3rd Place} - DEF CON 33 CTF (Team SuperDiceCode)}
+\cvitem{2024}{\textbf{2nd Place} - WhiteHat Contest (Team 991 - RoK Cyber Operations Command)}
+
+\section{Publications \& Conference Talks}
+\cvitem{\textcolor{blue}{\faIcon{microphone}}}{\textbf{COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE}}
+\cvitem{}{Offbyone 2025 Conference, Singapore (May 2025)}
+\cvitem{}{\textit{Presented novel COM vulnerabilities and exploitation techniques for Windows LPE}}
+
+\section{CTF Challenge Development}
+\cvitem{2025}{CodeGate 2025 Final - \textbf{fullchain} \textbullet{} CodeGate 2025 Pre-qual - \textbf{PWN-AppContainer}}
+\cvitem{2024}{CodeGate 2024 Final - \textbf{PWN-ULFS} \textbullet{} CCE 2024 Pre-qual - \textbf{PWN-BabyMojo}}
+
+\section{Vulnerability Disclosures}
+\cvitem{}{\textbf{Multiple published CVEs} across Microsoft Windows, Apple platforms, and open-source projects}
+\cvitem{}{Specializing in Windows kernel privilege escalation and browser security vulnerabilities}
+\cvitem{}{Full vulnerability portfolio: \textcolor{blue}{\url{https://smlijun.github.io/vulnerabilities.html}}}
+
+\vspace{5mm}
+
+\begin{center}
+\textcolor{darkblue}{\rule{0.8\textwidth}{0.5pt}}
+\vspace{2mm}
+
+\small{\textit{References and detailed project descriptions available upon request}}
+\end{center}
+
+\end{document}
+
