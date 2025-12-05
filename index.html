@@ -17,8 +17,9 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#research">Research</a></li>
+                <li><a href="#work-experience">Work</a></li>
+                <li><a href="#research-experience">Research</a></li>
+                <li><a href="#research-interests">Interests</a></li>
                 <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
                 <li><a href="cv.html">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -86,9 +87,9 @@
         </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="work-experience" class="section">
         <div class="container">
-            <h2 class="section-title">Research Experience</h2>
+            <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -140,7 +141,129 @@
         </div>
     </section>
 
-    <section id="research" class="section section-light">
+    <section id="research-experience" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Windows COM Security Research</h3>
+                            <span class="timeline-date">2024 – Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Audited Windows COM attack surfaces and broker boundaries, with emphasis on escalation paths 
+                            across integrity and sandbox boundaries. Developed a working AppContainer sandbox escape exploit 
+                            leveraging COM-based privilege escalation vulnerabilities. Research contributed to the OffByOne 2025 
+                            talk "COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE".
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Windows Double Fetch Monitor</h3>
+                            <span class="timeline-date">Aug 2024 – Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Designed and implemented a QEMU-KVM based monitoring system for detecting Double Fetch vulnerabilities, 
+                            a class of TOCTOU (Time-of-Check to Time-of-Use) race conditions in Windows kernel drivers. 
+                            Successfully detected 10+ known 1-day vulnerability cases, validating the effectiveness of the monitoring approach.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Vulnerability Analysis of Korean Security Products</h3>
+                            <span class="timeline-date">Mar 2025 – Jun 2025</span>
+                        </div>
+                        <p class="timeline-description">
+                            Analyzed kernel drivers and IPC mechanisms used in Korean financial security and antivirus products. 
+                            Identified and reported 37 vulnerabilities to KISA (Korea Internet & Security Agency), 
+                            earning ₩17.5M in bug bounty rewards.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>KAFL-based Windows Kernel Driver Fuzzing</h3>
+                            <span class="timeline-date">Oct 2024 – Mar 2025</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed LLM-assisted automated recovery of driver IOCTL interfaces for KAFL-based snapshot fuzzing. 
+                            Applied the technique to Windows kernel drivers and successfully discovered one real-world vulnerability.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Time-Travel Debugging based Harness Auto-Generation</h3>
+                            <span class="timeline-date">Mar 2024 – Sep 2024</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed a semi-automated fuzzing harness generation system leveraging Time-Travel Debugging (TTD). 
+                            The approach enables efficient extraction of target function contexts and input constraints, 
+                            significantly reducing manual effort in harness development.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>BYOVD and Exploit Detection in Windows Environments</h3>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <p class="timeline-company">Project Leader · Team Research · Patent Filed</p>
+                        <p class="timeline-description">
+                            Led development of detection techniques for Bring Your Own Vulnerable Driver (BYOVD) attacks 
+                            and exploit behaviors in Windows environments. Designed and implemented exploit unit tests to 
+                            validate detection mechanisms. Developed token stealing detection and malicious behavior monitoring 
+                            using the Windows Instrumentation API. Research resulted in one patent filing.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Apple JavaScriptCore Fuzzing</h3>
+                            <span class="timeline-date">2022</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed fuzzing harnesses targeting WebKit JavaScriptCore's JIT compiler. 
+                            Used differential and coverage-guided fuzzing to uncover JIT-only type-confusion and 
+                            memory-corruption issues, followed by manual exploitability analysis.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Enterprise Software Vulnerabilities</h3>
+                            <span class="timeline-date">2021 – 2022</span>
+                        </div>
+                        <p class="timeline-description">
+                            Discovered and analyzed 70+ enterprise-level vulnerabilities across multiple vendors, 
+                            including memory-corruption and logic bugs in F5 BIG-IP VPN. Focused on pre-auth RCE-class issues, 
+                            authentication bypasses, and privilege-escalation chains in high-value infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research-interests" class="section">
         <div class="container">
             <h2 class="section-title">Research Interests</h2>
             <div class="timeline">
