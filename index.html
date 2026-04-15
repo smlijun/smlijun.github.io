@@ -7,443 +7,159 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html">DongJun Kim</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work-experience">Work</a></li>
-                <li><a href="#research-experience">Research</a></li>
-                <li><a href="#research-interests">Interests</a></li>
-                <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+    <nav class="nav">
+        <div class="wrap">
+            <div class="nav-brand"><a href="index.html">DongJun Kim</a></div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#awards">awards</a></li>
+                <li><a href="#talks">talks</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="vulnerabilities.html">cves</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">dark</button></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-gradient">Security Researcher</span>
-                        <br>focused on Windows Kernel & Browser Security
-                    </h1>
-                    <p class="hero-description">
-                        Security researcher specializing in Windows kernel vulnerability analysis and exploitation. 
-                        My research experience spans from Windows kernel-level security to Chromium browser exploitation, 
-                        with extensive work in advanced fuzzing techniques including KAFL-based kernel fuzzing and Fuzzilli for browser security. 
-                        I focus on identifying and analyzing privilege escalation vulnerabilities in Windows operating systems and developing exploitation techniques.
+    <header class="intro" id="about">
+        <div class="wrap">
+            <div class="intro-row">
+                <img src="profile.jpg" alt="DongJun Kim" class="avatar">
+                <div class="intro-text">
+                    <h1>DongJun Kim</h1>
+                    <p class="tagline">Security Researcher · Windows Kernel &amp; Browser</p>
+                    <p class="bio">
+                        I hunt privilege-escalation bugs in the Windows kernel and exploit them.
+                        On the side, I poke at Chromium and build fuzzing automation.
+                        Currently at <a href="https://www.enki.co.kr/" target="_blank" rel="noopener">Enki WhiteHat</a>.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="vulnerabilities.html" class="btn btn-primary">Research Portfolio</a>
-                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="block" id="work">
+        <div class="wrap">
+            <h2 class="section-heading">Work</h2>
+            <div class="entries">
+                <div class="entry">
+                    <div class="when">2024 — now</div>
+                    <div class="what">
+                        <h3>Security Researcher</h3>
+                        <p class="where">Enki WhiteHat</p>
+                        <p>Windows kernel vulnerability research and exploit development.</p>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <img src="profile.jpg" alt="DongJun Kim" class="profile-photo">
+                <div class="entry">
+                    <div class="when">2021 — 2022</div>
+                    <div class="what">
+                        <h3>Best of the Best 10th — Vulnerability Analysis Track</h3>
+                        <p class="where">KITRI</p>
+                        <p>Selected as a Top 10 finalist.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section section-light">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead-text">
-                        I am a security researcher with deep expertise in Windows kernel security and exploitation. 
-                        My primary research focus has been on discovering and exploiting vulnerabilities in the Windows 
-                        operating system kernel, where I have identified numerous privilege escalation vulnerabilities. 
-                        Additionally, I have experience with Chromium browser security and extensively utilize advanced fuzzing 
-                        techniques including KAFL for kernel fuzzing and Fuzzilli for JavaScript engine security testing.
-                    </p>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-number" id="total-cves">--</div>
-                            <div class="stat-label">Published CVEs</div>
-                        </div>
-                        <div class="stat-card"> 
-                            <div class="stat-number" id="total-vendors">--</div>
-                            <div class="stat-label">Major Platforms</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">Top 100</div>
-                            <div class="stat-label">MSRC MVR 2025</div>
-                        </div>
+    <section class="block" id="awards">
+        <div class="wrap">
+            <h2 class="section-heading">Awards &amp; Recognition</h2>
+            <div class="entries">
+                <div class="entry">
+                    <div class="when">Jul 2025</div>
+                    <div class="what">
+                        <h3>MSRC Most Valuable Researcher 2025</h3>
+                        <p class="where">Microsoft · Annual Top 100</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="when">2026 Q1</div>
+                    <div class="what">
+                        <h3><a href="https://msrc.microsoft.com/leaderboard" target="_blank" rel="noopener">MSRC Quarterly Leaderboard</a></h3>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="when">2025 Q3</div>
+                    <div class="what"><h3>MSRC Quarterly Leaderboard</h3></div>
+                </div>
+                <div class="entry">
+                    <div class="when">2025 Q1</div>
+                    <div class="what"><h3>MSRC Quarterly Leaderboard</h3></div>
+                </div>
+                <div class="entry">
+                    <div class="when">2024 Q4</div>
+                    <div class="what"><h3>MSRC Quarterly Leaderboard</h3></div>
+                </div>
+                <div class="entry">
+                    <div class="when">2025</div>
+                    <div class="what">
+                        <h3>DEF CON 33 CTF — 3rd place</h3>
+                        <p class="where">Team SuperDiceCode</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="when">2023</div>
+                    <div class="what">
+                        <h3>WhiteHat Contest — 2nd place</h3>
+                        <p class="where">Team 991, ROK Cyber Operations Command</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="work-experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Security Researcher</h3>
-                            <span class="timeline-date">April 2024 - Present</span>
-                        </div>
-                        <p class="timeline-company">Enki WhiteHat</p>
-                        <p class="timeline-description">
-                            Conducting in-depth research on Windows kernel security and exploitation techniques. 
-                            Primary focus on discovering privilege escalation vulnerabilities through advanced fuzzing frameworks 
-                            such as KAFL for kernel components and manual code analysis. Additional research on Chromium browser 
-                            security using Fuzzilli and exploit development for modern web browsers.
-                        </p>
+    <section class="block" id="talks">
+        <div class="wrap">
+            <h2 class="section-heading">Talks</h2>
+            <ul class="list">
+                <li>
+                    <div class="when">May 2025</div>
+                    <div class="what">
+                        <a href="https://offbyone.sg/conference/dongjun-kim-jongseong-kim" target="_blank" rel="noopener">COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE</a>
+                        <span class="venue">OffByOne 2025</span>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Cybersecurity Specialist</h3>
-                            <span class="timeline-date">September 2022 - March 2024</span>
-                        </div>
-                        <p class="timeline-company">Korea Ministry of National Defense</p>
-                        <p class="timeline-description">
-                            
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Best of the Best 10th - Vulnerability Analysis Track</h3>
-                            <span class="timeline-date">July 2021 - March 2022</span>
-                        </div>
-                        <p class="timeline-company">KITRI (Korea Information Technology Research Institute)</p>
-                        <p class="timeline-description">
-                            Completed the prestigious Best of the Best (BoB) 10th cohort, an intensive cybersecurity training 
-                            program for nurturing next-generation security leaders. Specialized in vulnerability analysis track, 
-                            focusing on vulnerability discovery, exploit development, and security research methodologies. 
-                            Selected as one of the Top 10 finalists among all participants, recognized for outstanding 
-                            performance and technical excellence.
-                        </p>
-                    </div>
-                </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="wrap">
+            <h2 class="section-heading">Organized CTF Challenges</h2>
+            <ul class="list">
+                <li><div class="when">2025</div><div class="what"><a href="https://www.enki.co.kr/media-center/blog/codegate2025-fullchain-writeup" target="_blank" rel="noopener">CodeGate Final — <em>fullchain</em></a></div></li>
+                <li><div class="when">2025</div><div class="what">CodeGate Pre-qual — <em>PWN-AppContainer</em></div></li>
+                <li><div class="when">2024</div><div class="what">CodeGate Final — <em>PWN-ULFS</em></div></li>
+                <li><div class="when">2024</div><div class="what">CCE Pre-qual — <em>PWN-BabyMojo</em></div></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="block" id="contact">
+        <div class="wrap">
+            <h2 class="section-heading">Contact</h2>
+            <div class="contact-row">
+                <div><span class="label">email</span><a href="mailto:korea.smlijun@gmail.com">korea.smlijun@gmail.com</a></div>
+                <div><span class="label">github</span><a href="https://github.com/smlijun" target="_blank" rel="noopener">@smlijun</a></div>
+                <div><span class="label">linkedin</span><a href="https://www.linkedin.com/in/kdj-smlijun" target="_blank" rel="noopener">kdj-smlijun</a></div>
+                <div><span class="label">loc</span>Seoul, Korea</div>
             </div>
         </div>
     </section>
 
-    <section id="research-experience" class="section section-light">
-        <div class="container">
-            <h2 class="section-title">Research Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Windows COM Security Research</h3>
-                            <span class="timeline-date">2024 – Present</span>
-                        </div>
-                        <p class="timeline-description">
-                            Audited Windows COM attack surfaces and broker boundaries, with emphasis on escalation paths 
-                            across integrity and sandbox boundaries. Developed a working AppContainer sandbox escape exploit 
-                            leveraging COM-based privilege escalation vulnerabilities. Research contributed to the OffByOne 2025 
-                            talk "COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE".
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Windows Double Fetch Monitor</h3>
-                            <span class="timeline-date">Aug 2024 – Present</span>
-                        </div>
-                        <p class="timeline-description">
-                            Designed and implemented a QEMU-KVM based monitoring system for detecting Double Fetch vulnerabilities, 
-                            a class of TOCTOU (Time-of-Check to Time-of-Use) race conditions in Windows kernel drivers. 
-                            Successfully detected 10+ known 1-day vulnerability cases, validating the effectiveness of the monitoring approach.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Vulnerability Analysis of Korean Security Products</h3>
-                            <span class="timeline-date">Mar 2025 – Jun 2025</span>
-                        </div>
-                        <p class="timeline-description">
-                            Analyzed kernel drivers and IPC mechanisms used in Korean financial security and antivirus products. 
-                            Identified and reported 37 vulnerabilities to KISA (Korea Internet & Security Agency), 
-                            earning ₩17.5M in bug bounty rewards.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>KAFL-based Windows Kernel Driver Fuzzing</h3>
-                            <span class="timeline-date">Oct 2024 – Mar 2025</span>
-                        </div>
-                        <p class="timeline-description">
-                            Developed LLM-assisted automated recovery of driver IOCTL interfaces for KAFL-based snapshot fuzzing. 
-                            Applied the technique to Windows kernel drivers and successfully discovered one real-world vulnerability.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Time-Travel Debugging based Harness Auto-Generation</h3>
-                            <span class="timeline-date">Mar 2024 – Sep 2024</span>
-                        </div>
-                        <p class="timeline-description">
-                            Developed a semi-automated fuzzing harness generation system leveraging Time-Travel Debugging (TTD). 
-                            The approach enables efficient extraction of target function contexts and input constraints, 
-                            significantly reducing manual effort in harness development.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>BYOVD and Exploit Detection in Windows Environments</h3>
-                            <span class="timeline-date">2024</span>
-                        </div>
-                        <p class="timeline-company">Project Leader · Team Research · Patent Filed</p>
-                        <p class="timeline-description">
-                            Led development of detection techniques for Bring Your Own Vulnerable Driver (BYOVD) attacks 
-                            and exploit behaviors in Windows environments. Designed and implemented exploit unit tests to 
-                            validate detection mechanisms. Developed token stealing detection and malicious behavior monitoring 
-                            using the Windows Instrumentation API. Research resulted in one patent filing.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Apple JavaScriptCore Fuzzing</h3>
-                            <span class="timeline-date">2022</span>
-                        </div>
-                        <p class="timeline-description">
-                            Developed fuzzing harnesses targeting WebKit JavaScriptCore's JIT compiler. 
-                            Used differential and coverage-guided fuzzing to uncover JIT-only type-confusion and 
-                            memory-corruption issues, followed by manual exploitability analysis.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Enterprise Software Vulnerabilities</h3>
-                            <span class="timeline-date">2021 – 2022</span>
-                        </div>
-                        <p class="timeline-description">
-                            Discovered and analyzed 70+ enterprise-level vulnerabilities across multiple vendors, 
-                            including memory-corruption and logic bugs in F5 BIG-IP VPN. Focused on pre-auth RCE-class issues, 
-                            authentication bypasses, and privilege-escalation chains in high-value infrastructure.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="research-interests" class="section">
-        <div class="container">
-            <h2 class="section-title">Research Interests</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>💻 Windows Kernel Security</h3>
-                        </div>
-                        <p class="timeline-description">
-                            Primary research focus on Windows kernel vulnerability discovery and exploitation. 
-                            Extensive experience in analyzing kernel drivers, services, and system components. 
-                            Key areas include kernel driver vulnerability analysis, Windows service exploitation, 
-                            COM object security research, and privilege escalation techniques.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>🔍 Fuzzing & Automation</h3>
-                        </div>
-                        <p class="timeline-description">
-                            Extensive use of advanced fuzzing frameworks for automated vulnerability discovery in complex 
-                            software systems, with focus on kernel and browser security testing. Specialized in KAFL-based 
-                            kernel fuzzing, Fuzzilli for JavaScript engines, and fuzzing harness auto generation.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>🌐 Chromium Browser Security</h3>
-                        </div>
-                        <p class="timeline-description">
-                            Research experience in Chromium-based browser security, including renderer exploitation 
-                            and sandbox escape techniques. Focus areas include renderer process exploitation, sandbox 
-                            escape analysis, and browser IPC security.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>⬆️ Windows Exploitation</h3>
-                        </div>
-                        <p class="timeline-description">
-                            Development of exploitation techniques for Windows vulnerabilities, from initial code 
-                            execution to full system compromise. Specialized in local privilege escalation, exploit 
-                            development, and security boundary analysis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-highlight">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Vulnerability Disclosures</h2>
-                <p><span id="cta-cve-count">--</span> CVEs across Microsoft, Apple, and open-source projects</p>
-                <a href="vulnerabilities.html" class="btn btn-primary">View All Vulnerabilities</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Recognition & Awards</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>🏆 Microsoft Security Response Center - Most Valuable Researcher 2025</h3>
-                            <span class="timeline-date">July 2025</span>
-                        </div>
-                        <p class="timeline-company">#85 - Annual Top 100</p>
-                        <p class="timeline-description">
-                            Recognized as one of the top 100 security researchers globally for significant contributions 
-                            to Microsoft's security through vulnerability discoveries and disclosures.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>📊 MSRC Quarterly Leaderboards</h3>
-                        </div>
-                        <p class="timeline-description">
-                            Consistently featured on Microsoft Security Response Center quarterly leaderboards: Q3 2025, Q1 2025, and Q4 2024.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-light">
-        <div class="container">
-            <h2 class="section-title">Publications & Talks</h2>
-            <div class="publications-grid">
-                <a href="https://offbyone.sg/conference/dongjun-kim-jongseong-kim" target="_blank" class="publication-card-link">
-                    <div class="publication-card">
-                        <div class="publication-header">
-                            <h3>COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE</h3>
-                            <span class="publication-date">May 2025</span>
-                        </div>
-                        <p class="publication-venue">Offbyone 2025</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Competitions</h2>
-            <div class="competitions-grid">
-                <div class="competition-card award">
-                    <h3>🥉 DEF CON 33 CTF - 3rd Place</h3>
-                    <p>Team SuperDiceCode</p>
-                </div>
-                <div class="competition-card award">
-                    <h3>🥈 WhiteHat Contest - 2nd Place</h3>
-                    <p>Team 991 - Republic of Korea Cyber Operations Command</p>
-                </div>
-            </div>
-            <div class="organized-section">
-                <h3 class="subsection-title">Organized CTF Challenges</h3>
-                <ul class="organized-list">
-                    <li><strong>CodeGate 2025 Final</strong> - fullchain</li>
-                    <li><strong>CodeGate 2025 Pre-qual</strong> - PWN-AppContainer</li>
-                    <li><strong>CodeGate 2024 Final</strong> - PWN-ULFS</li>
-                    <li><strong>CCE 2024 Pre-qual</strong> - PWN-BabyMojo</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <a href="mailto:korea.smlijun@gmail.com" class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p>korea.smlijun@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/kdj-smlijun" target="_blank" class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>kdj-smlijun</p>
-                </a>
-                <a href="https://github.com/smlijun" target="_blank" class="contact-card">
-                    <div class="contact-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <p>@smlijun</p>
-                </a>
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <p>Seoul, Korea</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 DongJun Kim. All rights reserved.</p>
+    <footer class="foot">
+        <div class="wrap">
+            &copy; 2025 DongJun Kim
         </div>
     </footer>
 
     <script src="main.js"></script>
 </body>
 </html>
-

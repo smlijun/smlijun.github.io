@@ -7,6 +7,30 @@
       "logo": "microsoft",
       "vulnerabilities": [
         {
+          "cve": "CVE-2026-32223",
+          "title": "Windows USB Printing Stack (usbprint.sys) Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Driver"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32223"
+        },
+        {
+          "cve": "CVE-2026-32195",
+          "title": "Windows Kernel Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Kernel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32195"
+        },
+        {
+          "cve": "CVE-2026-24293",
+          "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Driver", "WinSock"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24293"
+        },
+        {
           "cve": "CVE-2025-26688",
           "title": "Microsoft Virtual Hard Disk Elevation of Privilege Vulnerability",
           "description": "",

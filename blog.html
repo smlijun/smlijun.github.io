@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CVEs — DongJun Kim</title>
+    <title>Blog — DongJun Kim</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +19,8 @@
                 <li><a href="index.html#work">work</a></li>
                 <li><a href="index.html#awards">awards</a></li>
                 <li><a href="index.html#talks">talks</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="vulnerabilities.html" class="active">cves</a></li>
+                <li><a href="blog.html" class="active">blog</a></li>
+                <li><a href="vulnerabilities.html">cves</a></li>
                 <li><a href="index.html#contact">contact</a></li>
                 <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">dark</button></li>
             </ul>
@@ -28,18 +28,19 @@
     </nav>
 
     <div class="wrap">
-        <h1 class="page-title">Vulnerability Disclosures</h1>
-        <p class="page-sub"><span id="summary-total-cves">--</span> CVEs · <span id="summary-total-vendors">--</span> vendors</p>
+        <h1 class="page-title" id="page-title">Blog</h1>
+        <p class="page-sub" id="page-sub"></p>
     </div>
 
     <main class="wrap">
-        <div id="vendors-container"></div>
+        <div id="blog-content"></div>
     </main>
 
     <footer class="foot">
         <div class="wrap">&copy; 2025 DongJun Kim</div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
