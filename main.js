@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initSmoothScroll();
+    initStickyNav();
+    initScrollSpy();
+    initReveal();
     const path = window.location.pathname;
     if (path.endsWith('vulnerabilities.html') || path.endsWith('/vulnerabilities')) {
         loadVulnerabilities();
@@ -9,6 +12,70 @@ document.addEventListener('DOMContentLoaded', () => {
         loadBlog();
     }
 });
+
+function prefersReducedMotion() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+// Fade in a translucent bottom border on the sticky nav once the page is scrolled.
+function initStickyNav() {
+    const nav = document.querySelector('.nav');
+    if (!nav) return;
+    const update = () => nav.classList.toggle('scrolled', window.scrollY > 6);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+}
+
+// Highlight the nav link for whichever section is crossing the middle of the viewport.
+function initScrollSpy() {
+    const links = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+    if (!links.length) return;
+    const pairs = links
+        .map(link => {
+            const sec = document.getElementById(link.getAttribute('href').slice(1));
+            return sec ? { link, sec } : null;
+        })
+        .filter(Boolean);
+    if (!pairs.length) return;
+
+    let active = null;
+    const setActive = link => {
+        if (active === link) return;
+        if (active) active.classList.remove('active');
+        active = link;
+        if (link) link.classList.add('active');
+    };
+
+    const io = new IntersectionObserver(entries => {
+        const visible = entries
+            .filter(e => e.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible.length) {
+            const pair = pairs.find(p => p.sec === visible[0].target);
+            if (pair) setActive(pair.link);
+        }
+    }, { rootMargin: '-35% 0px -55% 0px', threshold: [0, 0.05, 0.1] });
+
+    pairs.forEach(p => io.observe(p.sec));
+}
+
+// Observe targets and add `.in` as they scroll into view (CSS handles the fade-up).
+function revealAll(targets) {
+    if (prefersReducedMotion()) return;
+    const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('in');
+                obs.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+    targets.forEach(t => io.observe(t));
+}
+
+function initReveal() {
+    revealAll(document.querySelectorAll('header.intro .intro-text, section.block'));
+}
 
 function initTheme() {
     const saved = localStorage.getItem('theme') || 'dark';
@@ -151,6 +218,7 @@ async function loadVulnerabilities() {
         const container = document.getElementById('vendors-container');
         if (container) {
             container.innerHTML = data.vendors.map(renderVendor).join('');
+            revealAll(container.querySelectorAll('.vendor-block'));
         }
     } catch (error) {
         console.error('Failed to load vulnerabilities:', error);

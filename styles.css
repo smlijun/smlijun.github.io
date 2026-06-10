@@ -60,8 +60,18 @@ a:hover {
 
 /* Nav */
 .nav {
-    padding: 32px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 16px 0;
+    background: rgba(11, 11, 13, 0.72);
+    -webkit-backdrop-filter: saturate(160%) blur(12px);
+    backdrop-filter: saturate(160%) blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .25s ease, background .25s ease;
 }
+:root[data-theme="light"] .nav { background: rgba(255, 255, 255, 0.72); }
+.nav.scrolled { border-bottom-color: var(--border); }
 .nav .wrap {
     display: flex;
     justify-content: space-between;
@@ -83,10 +93,27 @@ a:hover {
     font-size: 17px;
 }
 .nav-links a {
+    position: relative;
     text-decoration: none;
     color: var(--muted);
+    padding-bottom: 3px;
+    transition: color .18s ease;
 }
-.nav-links a:hover,
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform .22s ease;
+}
+.nav-links a:hover { color: var(--fg); }
+.nav-links a:hover::after,
+.nav-links a.active::after { transform: scaleX(1); }
 .nav-links a.active { color: var(--fg); }
 
 .theme-toggle {
@@ -124,6 +151,11 @@ header.intro {
     object-fit: cover;
     flex-shrink: 0;
     border: 1px solid var(--border);
+    transition: border-color .25s ease, transform .25s ease;
+}
+.avatar:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
 }
 .intro-text h1 {
     margin: 0 0 6px;
@@ -143,8 +175,10 @@ header.intro {
 }
 
 /* Sections */
+body { counter-reset: section; }
 section.block {
     padding: 40px 0 8px;
+    counter-increment: section;
 }
 h2.section-heading {
     font-size: 16px;
@@ -155,6 +189,14 @@ h2.section-heading {
     margin: 0 0 20px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--border);
+}
+h2.section-heading::before {
+    content: counter(section, decimal-leading-zero);
+    margin-right: 11px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
 }
 
 /* Entries: date on left, content on right */
@@ -374,8 +416,38 @@ footer.foot {
     text-align: left;
 }
 
+/* Anchor offset so the sticky nav doesn't cover section tops */
+[id] { scroll-margin-top: 88px; }
+
+/* Keyboard focus */
+a:focus-visible,
+button:focus-visible,
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
+/* Scroll-reveal (progressive enhancement; gated on html.js so no-JS shows everything) */
+@media (prefers-reduced-motion: no-preference) {
+    html.js header.intro .intro-text,
+    html.js section.block,
+    html.js .vendor-block {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity .55s ease, transform .55s ease;
+    }
+    html.js header.intro .intro-text.in,
+    html.js section.block.in,
+    html.js .vendor-block.in {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 /* Responsive */
 @media (max-width: 620px) {
+    .nav { position: static; }
     .intro-row {
         flex-direction: column;
         gap: 18px;
