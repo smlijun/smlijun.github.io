@@ -7,6 +7,78 @@
       "logo": "microsoft",
       "vulnerabilities": [
         {
+          "cve": "CVE-2026-45502",
+          "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Exchange", "Information Disclosure"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45502"
+        },
+        {
+          "cve": "CVE-2026-45501",
+          "title": "Microsoft Exchange Server Spoofing Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Exchange", "Spoofing"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45501"
+        },
+        {
+          "cve": "CVE-2026-45500",
+          "title": "Microsoft Exchange Server Spoofing Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Exchange", "Spoofing"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45500"
+        },
+        {
+          "cve": "CVE-2026-42972",
+          "title": "Windows Hyper-V Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Windows", "Information Disclosure", "Hyper-V"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42972"
+        },
+        {
+          "cve": "CVE-2026-42912",
+          "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42912"
+        },
+        {
+          "cve": "CVE-2026-42837",
+          "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "ProjFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42837"
+        },
+        {
+          "cve": "CVE-2026-42828",
+          "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "ProjFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42828"
+        },
+        {
+          "cve": "CVE-2026-40382",
+          "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40382"
+        },
+        {
+          "cve": "CVE-2026-34338",
+          "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34338"
+        },
+        {
           "cve": "CVE-2026-32223",
           "title": "Windows USB Printing Stack (usbprint.sys) Elevation of Privilege Vulnerability",
           "description": "",
