@@ -76,12 +76,14 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 24px;
+    gap: 18px;
 }
 .nav-brand {
     font-weight: 600;
     font-size: 18px;
     letter-spacing: -0.01em;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 .nav-brand a { text-decoration: none; }
 .nav-links {
@@ -89,8 +91,10 @@ a:hover {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 22px;
-    font-size: 17px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 7px 13px;
+    font-size: 14.5px;
 }
 .nav-links a {
     position: relative;
@@ -233,6 +237,25 @@ h2.section-heading::before {
     font-size: 18px;
     color: var(--entry-text);
 }
+.entry .what .where strong {
+    color: var(--fg);
+    font-weight: 600;
+}
+.entry .what p.paper-links {
+    margin-top: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    font-family: var(--mono);
+    font-size: 14.5px;
+}
+.paper-links a {
+    color: var(--muted);
+    text-decoration: none;
+}
+.paper-links a:hover { color: var(--accent); }
+.paper-links a::before { content: "["; opacity: 0.5; }
+.paper-links a::after { content: "]"; opacity: 0.5; }
 
 /* Plain link list for publications, CTFs, etc. */
 ul.list {
