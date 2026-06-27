@@ -79,6 +79,14 @@
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34338"
         },
         {
+          "cve": "CVE-2026-33840",
+          "title": "Win32k Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Win32k"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33840"
+        },
+        {
           "cve": "CVE-2026-32223",
           "title": "Windows USB Printing Stack (usbprint.sys) Elevation of Privilege Vulnerability",
           "description": "",
@@ -103,20 +111,20 @@
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24293"
         },
         {
+          "cve": "CVE-2025-60703",
+          "title": "Windows Remote Desktop Services Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "RDP"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-60703"
+        },
+        {
           "cve": "CVE-2025-26688",
           "title": "Microsoft Virtual Hard Disk Elevation of Privilege Vulnerability",
           "description": "",
           "severity": "high",
           "tags": ["Windows", "LPE"],
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26688"
-        },
-        {
-          "cve": "CVE-2025-27467",
-          "title": "Windows Digital Media Elevation of Privilege Vulnerability",
-          "description": "",
-          "severity": "high",
-          "tags": ["Windows", "LPE", "Digital Media"],
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27467"
         },
         {
           "cve": "CVE-2025-27476",
