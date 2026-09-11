@@ -7,6 +7,174 @@
       "logo": "microsoft",
       "vulnerabilities": [
         {
+          "cve": "CVE-2026-77504",
+          "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Word"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77504"
+        },
+        {
+          "cve": "CVE-2026-70306",
+          "title": "Microsoft Office SharePoint Spoofing Vulnerability",
+          "description": "",
+          "severity": "critical",
+          "tags": ["SharePoint", "Spoofing"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70306"
+        },
+        {
+          "cve": "CVE-2026-69904",
+          "title": "Microsoft Office SharePoint Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "low",
+          "tags": ["SharePoint", "Information Disclosure"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69904"
+        },
+        {
+          "cve": "CVE-2026-69690",
+          "title": "Microsoft Office SharePoint Spoofing Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["SharePoint", "Spoofing"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69690"
+        },
+        {
+          "cve": "CVE-2026-69605",
+          "title": "Microsoft Install Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69605"
+        },
+        {
+          "cve": "CVE-2026-69417",
+          "title": "Microsoft Office SharePoint Spoofing Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["SharePoint", "Spoofing"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69417"
+        },
+        {
+          "cve": "CVE-2026-69380",
+          "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Exchange", "LPE"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69380"
+        },
+        {
+          "cve": "CVE-2026-69282",
+          "title": "Microsoft Office SharePoint Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["SharePoint", "RCE"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69282"
+        },
+        {
+          "cve": "CVE-2026-68795",
+          "title": "Microsoft Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68795"
+        },
+        {
+          "cve": "CVE-2026-64916",
+          "title": "Microsoft SharePoint Server Spoofing Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["SharePoint", "Spoofing"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64916"
+        },
+        {
+          "cve": "CVE-2026-64899",
+          "title": "Microsoft Office Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Office", "Information Disclosure"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64899"
+        },
+        {
+          "cve": "CVE-2026-63515",
+          "title": "Microsoft Office Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63515"
+        },
+        {
+          "cve": "CVE-2026-63513",
+          "title": "Microsoft Office Graphics Component Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Graphics"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63513"
+        },
+        {
+          "cve": "CVE-2026-62735",
+          "title": "Windows HTTP.sys Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "HTTP.sys"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62735"
+        },
+        {
+          "cve": "CVE-2026-61937",
+          "title": "Windows HTTP.sys Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "HTTP.sys"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61937"
+        },
+        {
+          "cve": "CVE-2026-61366",
+          "title": "Windows Network Connection Broker Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61366"
+        },
+        {
+          "cve": "CVE-2026-61349",
+          "title": "Windows Work Folder Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61349"
+        },
+        {
+          "cve": "CVE-2026-50490",
+          "title": "Windows Installer Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Installer"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50490"
+        },
+        {
+          "cve": "CVE-2026-50341",
+          "title": "Windows NTFS Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Windows", "Information Disclosure", "NTFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50341"
+        },
+        {
+          "cve": "CVE-2026-47304",
+          "title": ".NET Security Feature Bypass Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": [".NET", "Security Feature Bypass"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47304"
+        },
+        {
+          "cve": "CVE-2026-45504",
+          "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Exchange", "LPE"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45504"
+        },
+        {
           "cve": "CVE-2026-45502",
           "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
           "description": "",
@@ -90,7 +258,7 @@
           "cve": "CVE-2026-32223",
           "title": "Windows USB Printing Stack (usbprint.sys) Elevation of Privilege Vulnerability",
           "description": "",
-          "severity": "high",
+          "severity": "medium",
           "tags": ["Windows", "LPE", "Driver"],
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32223"
         },
