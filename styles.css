@@ -211,7 +211,7 @@ h2.section-heading::before {
 }
 .entry {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 150px 1fr;
     gap: 20px;
     align-items: baseline;
 }
@@ -265,7 +265,7 @@ ul.list {
 }
 ul.list li {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 150px 1fr;
     gap: 20px;
     align-items: baseline;
     padding: 8px 0;
