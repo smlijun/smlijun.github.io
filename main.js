@@ -69,7 +69,7 @@ function revealAll(targets) {
                 obs.unobserve(e.target);
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
     targets.forEach(t => io.observe(t));
 }
 
