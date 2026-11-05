@@ -74,7 +74,7 @@ function revealAll(targets) {
 }
 
 function initReveal() {
-    revealAll(document.querySelectorAll('header.intro .intro-text, section.block'));
+    revealAll(document.querySelectorAll('.hero-text, section.block'));
 }
 
 function initTheme() {
@@ -94,7 +94,7 @@ function initTheme() {
 function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     const btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? 'dark' : 'light';
+    if (btn) btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 }
 
 function initSmoothScroll() {
@@ -211,7 +211,7 @@ async function loadVulnerabilities() {
         const totalVendors = data.vendors.length;
 
         const totalEl = document.getElementById('summary-total-cves');
-        if (totalEl) totalEl.textContent = `${totalCVEs}+`;
+        if (totalEl) totalEl.textContent = totalCVEs;
         const vendEl = document.getElementById('summary-total-vendors');
         if (vendEl) vendEl.textContent = totalVendors;
 
