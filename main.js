@@ -78,12 +78,12 @@ function initReveal() {
 }
 
 function initTheme() {
-    const saved = localStorage.getItem('theme') || 'dark';
+    const saved = localStorage.getItem('theme') || 'light';
     applyTheme(saved);
     const btn = document.getElementById('theme-toggle');
     if (btn) {
         btn.addEventListener('click', () => {
-            const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+            const cur = document.documentElement.getAttribute('data-theme') || 'light';
             const next = cur === 'dark' ? 'light' : 'dark';
             localStorage.setItem('theme', next);
             applyTheme(next);

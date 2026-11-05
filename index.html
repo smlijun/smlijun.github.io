@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme')||'dark';d.setAttribute('data-theme',t);}catch(e){d.setAttribute('data-theme','dark');}})();</script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme')||'light';d.setAttribute('data-theme',t);}catch(e){d.setAttribute('data-theme','light');}})();</script>
 </head>
 <body>
     <nav class="nav">
@@ -16,6 +16,7 @@
             <div class="nav-brand"><a href="index.html">DongJun Kim</a></div>
             <ul class="nav-links">
                 <li><a href="#about">about</a></li>
+                <li><a href="#news">news</a></li>
                 <li><a href="#work">work</a></li>
                 <li><a href="#education">education</a></li>
                 <li><a href="#papers">papers</a></li>
@@ -35,23 +36,54 @@
                 <img src="profile.jpg" alt="DongJun Kim" class="avatar">
                 <div class="intro-text">
                     <h1>DongJun Kim</h1>
-                    <p class="tagline">Security Researcher · Windows Kernel &amp; Browser</p>
+                    <p class="tagline">Security Researcher · Agentic Security &amp; Cyber Benchmarks</p>
                     <p class="bio">
                         I'm an M.S. student in Computer Science at
                         <a href="https://cs.illinois.edu/" target="_blank" rel="noopener">UIUC</a>,
-                        specializing in Windows kernel vulnerability research and exploitation. I focus on
-                        discovering privilege-escalation bugs in kernel drivers, system services, and COM/RPC
-                        internals through static analysis and fuzzing, with additional research on Chromium
-                        browser security. Previously a security researcher at
+                        building AI agents that find real vulnerabilities and benchmarks that measure the cyber
+                        capabilities of frontier models. My work spans agentic vulnerability discovery in production
+                        Windows binaries (<a href="https://deepbinary.so/" target="_blank" rel="noopener">DeepBinary</a>)
+                        and long-horizon security evaluation (<a href="https://arxiv.org/abs/2605.26548" target="_blank" rel="noopener">SEC-bench Pro</a>,
+                        <a href="https://arxiv.org/abs/2610.34435" target="_blank" rel="noopener">CyberDual</a>), now used by
+                        OpenAI, Google, DeepSeek, and NIST to evaluate frontier models. This builds on a background in
+                        Windows kernel vulnerability research and exploitation, as a security researcher at
                         <a href="https://www.enki.co.kr/" target="_blank" rel="noopener">Enki WhiteHat</a>
                         (2024 — 2026). I've been recognized as a Microsoft
-                        <strong>MSRC Most Valuable Researcher</strong> (2025 and 2026, Global Top 100), with 50+ CVEs
+                        <strong>MSRC Most Valuable Researcher</strong> (2025 and 2026, Global Top 100), with 90 CVEs
                         disclosed.
                     </p>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="block" id="news">
+        <div class="wrap">
+            <h2 class="section-heading">News</h2>
+            <ul class="list">
+                <li>
+                    <div class="when">Oct 2026</div>
+                    <div class="what">Released the <a href="https://deepbinary.so/" target="_blank" rel="noopener">DeepBinary</a> leaderboard, benchmarking AI agents on deep vulnerability discovery in real Windows system binaries.</div>
+                </li>
+                <li>
+                    <div class="when">Oct 2026</div>
+                    <div class="what">New preprint, <a href="https://arxiv.org/abs/2610.34435" target="_blank" rel="noopener">CyberDual</a>, evaluates AI attackers against AI code reviewers in real software maintenance (<a href="https://cyberdual.github.io/" target="_blank" rel="noopener">project &amp; leaderboard</a>).</div>
+                </li>
+                <li>
+                    <div class="when">Oct 2026</div>
+                    <div class="what"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">Google</a> used SEC-bench Pro to evaluate Gemini 4 Carbon's vulnerability discovery capabilities.</div>
+                </li>
+                <li>
+                    <div class="when">Oct 2026</div>
+                    <div class="what">Credited for 27 CVEs in Microsoft's October 2026 security update.</div>
+                </li>
+                <li>
+                    <div class="when">May 2026</div>
+                    <div class="what">New preprint, <a href="https://arxiv.org/abs/2605.26548" target="_blank" rel="noopener">SEC-bench Pro</a>, evaluates frontier models on long-horizon vulnerability discovery across browser engines and the Linux kernel.</div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <section class="block" id="work">
         <div class="wrap">
@@ -91,9 +123,34 @@
                 <div class="entry">
                     <div class="when">arXiv 2026</div>
                     <div class="what">
+                        <h3><a href="https://arxiv.org/abs/2610.34435" target="_blank" rel="noopener">CyberDual: AI Attackers versus AI Code Reviewers in Real Software Maintenance</a></h3>
+                        <p class="where">Chenyuan Yang*, Hwiwon Lee*, Jongseong Kim, Yihan Yang, <strong>DongJun Kim</strong>, Yinfang Chen, Lingming Zhang <span class="venue">(* equal contribution)</span></p>
+                        <p>Evaluates AI agents as both attackers and code reviewers in real software maintenance: attackers embed exploitable vulnerabilities in open-source code changes, reviewers try to detect and repair them, and re-executing the attacker's proof of concept decides whether the exploit survives. Includes 1,088 valid attacks from six attackers against three agentic reviewers.</p>
+                        <p class="paper-links">
+                            <a href="https://arxiv.org/abs/2610.34435" target="_blank" rel="noopener">arXiv</a>
+                            <a href="https://github.com/CyberDual/CyberDual" target="_blank" rel="noopener">GitHub</a>
+                            <a href="https://cyberdual.github.io/" target="_blank" rel="noopener">Leaderboard</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="when">Benchmark 2026</div>
+                    <div class="what">
+                        <h3><a href="https://deepbinary.so/" target="_blank" rel="noopener">DeepBinary: Can AI Agents Uncover Deep Vulnerabilities in Production Binaries?</a></h3>
+                        <p class="where">Jongseong Kim*, Hwiwon Lee*, <strong>DongJun Kim</strong>, Lingming Zhang <span class="venue">(* equal contribution)</span></p>
+                        <p>A leaderboard benchmarking AI agents on real Windows system binaries, scoring findings by executable evidence, security impact, and estimated bounty. All zero-days found through this research have been reported to MSRC.</p>
+                        <p class="paper-links">
+                            <a href="https://deepbinary.so/" target="_blank" rel="noopener">Leaderboard</a>
+                            <a href="https://github.com/DeepBinary/DeepBinary" target="_blank" rel="noopener">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="when">arXiv 2026</div>
+                    <div class="what">
                         <h3><a href="https://arxiv.org/abs/2605.26548" target="_blank" rel="noopener">SEC-bench Pro: Can Language Models Solve Long-Horizon Software Security Tasks?</a></h3>
                         <p class="where">Hwiwon Lee, Jiawei Liu, <strong>DongJun Kim</strong>, Ziqi Zhang, Chunqiu Steven Xia, Lingming Zhang</p>
-                        <p>A benchmark that challenges modern coding agents with long-horizon security tasks in critical, high-complexity software systems (at million-line scale), including vulnerabilities with over $1 million in cumulative bug bounties. Adopted by <a href="https://openai.com/index/daybreak-securing-the-world/" target="_blank" rel="noopener">OpenAI</a> for evaluating their recent GPT-5.5-Cyber.</p>
+                        <p>A benchmark that challenges modern coding agents with long-horizon security tasks in critical, high-complexity software systems (at million-line scale), including vulnerabilities with over $1 million in cumulative bug bounties. Adopted for frontier-model evaluation by <a href="https://openai.com/index/daybreak-securing-the-world/" target="_blank" rel="noopener">OpenAI</a> (GPT-5.5-Cyber, <a href="https://deploymentsafety.openai.com/gpt-6-astra" target="_blank" rel="noopener">GPT-6 Astra</a>), <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">Google</a> (Gemini 4 Carbon), <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">DeepSeek</a>, and <a href="https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities" target="_blank" rel="noopener">NIST CAISI</a>.</p>
                         <p class="paper-links">
                             <a href="https://arxiv.org/abs/2605.26548" target="_blank" rel="noopener">arXiv</a>
                             <a href="https://github.com/SEC-bench/SEC-bench-Pro" target="_blank" rel="noopener">GitHub</a>
