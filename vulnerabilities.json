@@ -7,12 +7,212 @@
       "logo": "microsoft",
       "vulnerabilities": [
         {
+          "cve": "CVE-2026-109453",
+          "title": "Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "VHD"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109453"
+        },
+        {
+          "cve": "CVE-2026-103555",
+          "title": "Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "VHD"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-103555"
+        },
+        {
+          "cve": "CVE-2026-102225",
+          "title": "Windows Text Shaping Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "RCE", "Text Shaping"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102225"
+        },
+        {
+          "cve": "CVE-2026-102205",
+          "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "UDFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102205"
+        },
+        {
+          "cve": "CVE-2026-100211",
+          "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100211"
+        },
+        {
+          "cve": "CVE-2026-100209",
+          "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100209"
+        },
+        {
+          "cve": "CVE-2026-97814",
+          "title": "Windows Text Shaping Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "critical",
+          "tags": ["Windows", "RCE", "Text Shaping"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97814"
+        },
+        {
+          "cve": "CVE-2026-97794",
+          "title": "Windows Container Isolation FS Filter Driver (unionfs.sys) Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Driver"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97794"
+        },
+        {
+          "cve": "CVE-2026-97768",
+          "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97768"
+        },
+        {
+          "cve": "CVE-2026-97761",
+          "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761"
+        },
+        {
+          "cve": "CVE-2026-97760",
+          "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Office", "Information Disclosure", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97760"
+        },
+        {
+          "cve": "CVE-2026-97750",
+          "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97750"
+        },
+        {
+          "cve": "CVE-2026-97743",
+          "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Office", "Information Disclosure", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97743"
+        },
+        {
+          "cve": "CVE-2026-97740",
+          "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Office", "Information Disclosure", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97740"
+        },
+        {
+          "cve": "CVE-2026-97011",
+          "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97011"
+        },
+        {
+          "cve": "CVE-2026-96949",
+          "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "UDFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96949"
+        },
+        {
+          "cve": "CVE-2026-96947",
+          "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "UDFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96947"
+        },
+        {
+          "cve": "CVE-2026-96946",
+          "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "UDFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96946"
+        },
+        {
+          "cve": "CVE-2026-96912",
+          "title": "Windows Client License Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96912"
+        },
+        {
+          "cve": "CVE-2026-96185",
+          "title": "Microsoft Exchange Online Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Exchange", "RCE"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185"
+        },
+        {
+          "cve": "CVE-2026-85372",
+          "title": "Windows Kernel Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Kernel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85372"
+        },
+        {
+          "cve": "CVE-2026-84018",
+          "title": "Windows Print Spooler Components Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Print Spooler"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84018"
+        },
+        {
+          "cve": "CVE-2026-83886",
+          "title": "Windows Update Orchestrator Service Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "Service"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83886"
+        },
+        {
+          "cve": "CVE-2026-81355",
+          "title": "Virtual Hard Disk (VHD) Miniport Driver Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "RCE", "VHD"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81355"
+        },
+        {
           "cve": "CVE-2026-77504",
           "title": "Microsoft Office Word Remote Code Execution Vulnerability",
           "description": "",
           "severity": "high",
           "tags": ["Office", "RCE", "Word"],
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77504"
+        },
+        {
+          "cve": "CVE-2026-70571",
+          "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Exchange", "RCE"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70571"
         },
         {
           "cve": "CVE-2026-70306",
@@ -23,6 +223,30 @@
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70306"
         },
         {
+          "cve": "CVE-2026-70263",
+          "title": "Microsoft Office Word Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Office", "Information Disclosure", "Word"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70263"
+        },
+        {
+          "cve": "CVE-2026-70217",
+          "title": "Microsoft Office SharePoint Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["SharePoint", "Information Disclosure"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70217"
+        },
+        {
+          "cve": "CVE-2026-69915",
+          "title": "Windows NTFS Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "NTFS"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69915"
+        },
+        {
           "cve": "CVE-2026-69904",
           "title": "Microsoft Office SharePoint Information Disclosure Vulnerability",
           "description": "",
@@ -31,12 +255,28 @@
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69904"
         },
         {
+          "cve": "CVE-2026-69767",
+          "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "PowerPoint"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69767"
+        },
+        {
           "cve": "CVE-2026-69690",
           "title": "Microsoft Office SharePoint Spoofing Vulnerability",
           "description": "",
           "severity": "medium",
           "tags": ["SharePoint", "Spoofing"],
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69690"
+        },
+        {
+          "cve": "CVE-2026-69619",
+          "title": "Windows exFAT File System Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "exFAT"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69619"
         },
         {
           "cve": "CVE-2026-69605",
@@ -55,6 +295,14 @@
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69417"
         },
         {
+          "cve": "CVE-2026-69406",
+          "title": "Windows Kernel Information Disclosure Vulnerability",
+          "description": "",
+          "severity": "medium",
+          "tags": ["Windows", "Information Disclosure", "Kernel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69406"
+        },
+        {
           "cve": "CVE-2026-69380",
           "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
           "description": "",
@@ -63,12 +311,36 @@
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69380"
         },
         {
+          "cve": "CVE-2026-69360",
+          "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Word"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69360"
+        },
+        {
           "cve": "CVE-2026-69282",
           "title": "Microsoft Office SharePoint Remote Code Execution Vulnerability",
           "description": "",
           "severity": "high",
           "tags": ["SharePoint", "RCE"],
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69282"
+        },
+        {
+          "cve": "CVE-2026-68807",
+          "title": "Microsoft Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68807"
+        },
+        {
+          "cve": "CVE-2026-68804",
+          "title": "Microsoft Excel Remote Code Execution Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Office", "RCE", "Excel"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804"
         },
         {
           "cve": "CVE-2026-68795",
@@ -109,6 +381,14 @@
           "severity": "high",
           "tags": ["Office", "RCE", "Graphics"],
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63513"
+        },
+        {
+          "cve": "CVE-2026-62741",
+          "title": "Windows HTTP.sys Elevation of Privilege Vulnerability",
+          "description": "",
+          "severity": "high",
+          "tags": ["Windows", "LPE", "HTTP.sys"],
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62741"
         },
         {
           "cve": "CVE-2026-62735",
@@ -480,4 +760,3 @@
     }
   ]
 }
-
